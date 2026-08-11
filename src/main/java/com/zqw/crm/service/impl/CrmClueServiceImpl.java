@@ -7,12 +7,10 @@ import com.zqw.crm.entity.CrmCustomer;
 import com.zqw.crm.mapper.CrmClueMapper;
 import com.zqw.crm.service.CrmClueService;
 import com.zqw.crm.service.CrmCustomerService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-@RequiredArgsConstructor
 public class CrmClueServiceImpl extends ServiceImpl<CrmClueMapper, CrmClue> implements CrmClueService {
 
     private final CrmCustomerService customerService;

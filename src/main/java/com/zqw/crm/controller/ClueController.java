@@ -8,7 +8,6 @@ import com.zqw.crm.security.SecurityUser;
 import com.zqw.crm.service.CrmClueService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
@@ -16,7 +15,6 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name = "06. 销售线索接口")
 @RestController
 @RequestMapping("/api/crm/clue")
-@RequiredArgsConstructor
 public class ClueController {
 
     private final CrmClueService clueService;
