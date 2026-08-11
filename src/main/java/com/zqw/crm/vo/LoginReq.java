@@ -1,9 +1,7 @@
 package com.zqw.crm.vo;
 
 import jakarta.validation.constraints.NotBlank;
-import lombok.Data;
 
-@Data
 public class LoginReq {
 
     @NotBlank(message = "用户名不能为空")
