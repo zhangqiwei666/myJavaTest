@@ -12,7 +12,6 @@ import com.zqw.crm.service.SysUserService;
 import com.zqw.crm.vo.AssignRolesReq;
 import com.zqw.crm.vo.LoginReq;
 import com.zqw.crm.vo.LoginResp;
-import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,7 +20,6 @@ import org.springframework.util.StringUtils;
 import java.util.List;
 
 @Service
-@RequiredArgsConstructor
 public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> implements SysUserService {
 
     private final PasswordEncoder passwordEncoder;

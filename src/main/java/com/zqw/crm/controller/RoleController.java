@@ -7,7 +7,6 @@ import com.zqw.crm.vo.AssignPermissionsReq;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
-import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,7 +15,6 @@ import java.util.List;
 @Tag(name = "03. 角色管理接口")
 @RestController
 @RequestMapping("/api/system/role")
-@RequiredArgsConstructor
 public class RoleController {
 
     private final SysRoleService sysRoleService;

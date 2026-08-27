@@ -1,11 +1,9 @@
 package com.zqw.crm.vo;
 
 import jakarta.validation.constraints.NotNull;
-import lombok.Data;
 
 import java.util.List;
 
-@Data
 public class AssignRolesReq {
 
     @NotNull(message = "用户ID不能为空")

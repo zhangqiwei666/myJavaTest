@@ -1,8 +1,5 @@
 package com.zqw.crm.vo;
 
-import lombok.Data;
-
-@Data
 public class CustomerQueryReq {
 
     private String name;
