@@ -128,13 +128,13 @@ CREATE TABLE `crm_opportunity` (
 
 -- ========================================================
 -- 初始 Seed 数据 (初始管理员密码为 123456)
--- BCrypt 密文: $2a$10$7JB720yubVSZvUI0rEqK/.VqGOZTH.E/T1X8T/O2kC4E2k2M4J53e
+-- BCrypt 密文: $2a$10$IUj5SL6b4GrrTUfEz0QdA.l6drshMBZpougilAMF1Y86anUdoSlwK
 -- ========================================================
 
 -- 插入默认管理员与销售账号
 INSERT INTO `sys_user` (`id`, `username`, `password`, `real_name`, `phone`, `email`, `status`) VALUES
-(1, 'admin', '$2a$10$7JB720yubVSZvUI0rEqK/.VqGOZTH.E/T1X8T/O2kC4E2k2M4J53e', '超级管理员', '13800138000', 'admin@crm.com', 1),
-(2, 'seller', '$2a$10$7JB720yubVSZvUI0rEqK/.VqGOZTH.E/T1X8T/O2kC4E2k2M4J53e', '资深销售张三', '13900139000', 'zhangsan@crm.com', 1);
+(1, 'admin', '$2a$10$IUj5SL6b4GrrTUfEz0QdA.l6drshMBZpougilAMF1Y86anUdoSlwK', '超级管理员', '13800138000', 'admin@crm.com', 1),
+(2, 'seller', '$2a$10$IUj5SL6b4GrrTUfEz0QdA.l6drshMBZpougilAMF1Y86anUdoSlwK', '资深销售张三', '13900139000', 'zhangsan@crm.com', 1);
 
 -- 插入默认角色
 INSERT INTO `sys_role` (`id`, `role_name`, `role_key`, `description`) VALUES
